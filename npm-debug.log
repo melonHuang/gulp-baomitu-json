@@ -1,0 +1,46 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.21/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'adduser' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.21
+4 warn Username may not contain non-url-safe chars
+5 warn Username must be lowercase
+6 verbose adduser before first PUT { name: 'melonhuang',
+6 verbose adduser   salt: 'XXXXX',
+6 verbose adduser   password_sha: 'XXXXX',
+6 verbose adduser   email: '228941629@qq.com',
+6 verbose adduser   _id: 'org.couchdb.user:melonhuang',
+6 verbose adduser   type: 'user',
+6 verbose adduser   roles: [],
+6 verbose adduser   date: '2015-07-02T09:29:32.848Z' }
+7 verbose url raw /-/user/org.couchdb.user:melonhuang
+8 verbose url resolving [ 'https://registry.npmjs.org/',
+8 verbose url resolving   './-/user/org.couchdb.user:melonhuang' ]
+9 verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:melonhuang
+10 info trying registry request attempt 1 at 17:29:32
+11 http PUT https://registry.npmjs.org/-/user/org.couchdb.user:melonhuang
+12 http 400 https://registry.npmjs.org/-/user/org.couchdb.user:melonhuang
+13 verbose adduser back [ [Error: Unknown error while authenticating : -/user/org.couchdb.user:melonhuang],
+13 verbose adduser   { ok: false, error: 'Unknown error while authenticating' },
+13 verbose adduser   '{"ok":false,"error":"Unknown error while authenticating"}' ]
+14 error Error: Unknown error while authenticating : -/user/org.couchdb.user:melonhuang
+14 error     at RegClient.<anonymous> (/usr/local/Cellar/node/0.10.21/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:272:14)
+14 error     at Request.self.callback (/usr/local/Cellar/node/0.10.21/lib/node_modules/npm/node_modules/request/request.js:129:22)
+14 error     at Request.EventEmitter.emit (events.js:98:17)
+14 error     at Request.<anonymous> (/usr/local/Cellar/node/0.10.21/lib/node_modules/npm/node_modules/request/request.js:873:14)
+14 error     at Request.EventEmitter.emit (events.js:117:20)
+14 error     at IncomingMessage.<anonymous> (/usr/local/Cellar/node/0.10.21/lib/node_modules/npm/node_modules/request/request.js:824:12)
+14 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+14 error     at _stream_readable.js:920:16
+14 error     at process._tickCallback (node.js:415:13)
+15 error If you need help, you may report this log at:
+15 error     <http://github.com/isaacs/npm/issues>
+15 error or email it to:
+15 error     <npm-@googlegroups.com>
+16 error System Darwin 14.0.0
+17 error command "/usr/local/Cellar/node/0.10.21/bin/node" "/usr/local/bin/npm" "adduser"
+18 error cwd /Users/huangwei/Desktop/webRoot/gulp-baomitu-json
+19 error node -v v0.10.21
+20 error npm -v 1.3.11
+21 verbose exit [ 1, true ]
